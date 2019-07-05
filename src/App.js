@@ -3,7 +3,7 @@ import './App.css';
 import Board from './bannuComponents/Board'
 import Square from './bannuComponents/Square'
 import Game from './bannuComponents/Game'
-import GameStart from './tiktoktoe/Ganesh';
+import GameStart from './tiktoktoe/GameStart';
 
 
 function App() {
@@ -11,8 +11,10 @@ function App() {
     <div>
     
      <Game/>
-
-     {/* <GameStart/> */}
+<br/>
+     <hr/>
+<br/>
+     <GameStart/>
     
     </div>
   );
