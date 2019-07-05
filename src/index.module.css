@@ -40,3 +40,15 @@ body {
     margin-left: 20px;
   }
   
+
+  .bannuapp{
+    float:left;
+  }
+
+  .ganiapp{
+    float:right
+  }
+
+  .routerDisplay{
+    margin-top:5rem;
+  }
