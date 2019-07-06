@@ -52,3 +52,8 @@ body {
   .routerDisplay{
     margin-top:5rem;
   }
+
+  .curPlayer{
+    font-size: 30px;
+    color:red;
+  }

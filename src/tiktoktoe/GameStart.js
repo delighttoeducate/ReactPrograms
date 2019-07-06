@@ -49,15 +49,19 @@ class Board extends Component {
   render() {
     const winner = calculateWinner(this.state.SquareValues);
     let status;
+    let curPlayer;
     if (winner) {
-      status = `Winner ${winner}`;
+      status = "Winner ";
+      curPlayer = winner;
     } else {
-      status = `Next Player ${this.state.xIsNext ? "X" : "O"}`;
+      status = `Next Player`;
+      curPlayer = this.state.xIsNext ? "X" : "O";
     }
     return (
       <div>
         <div className="status">
-          <strong>{status}</strong>
+          <h1>{status} - 
+          <span className={styles.curPlayer}>{` ${curPlayer}`}</span></h1>
         </div>
         <div className="board-row">
           {this.renderSquare(0)}
@@ -80,11 +84,12 @@ class Board extends Component {
 }
 
 class GameStart extends Component {
+ 
   render() {
     return (
       <div className="game">
         <div className="game-board">
-          <Board />
+          <Board squares/>
         </div>
 
         <div className="game-info">

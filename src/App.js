@@ -44,7 +44,6 @@ function BannuApp() {
   <ErrorBoundry>
       <Game />
   </ErrorBoundry>
-  <h2>Test Message</h2>
 </>
 
   );
